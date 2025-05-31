@@ -7,9 +7,6 @@ from starlette.requests import Request
 tags_metadata = [
     {
         "name": "Predict"
-    },
-    {
-        "name": "Default"
     }
 ]
 
@@ -28,7 +25,7 @@ app = FastAPI(
 async def predict():
     return "Post"
 
-@app.get("/", tags=["Default"])
+@app.get("/")
 async def root(request: Request) -> JSONResponse:
     endpoints = []
 

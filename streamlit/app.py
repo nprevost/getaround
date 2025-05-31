@@ -26,7 +26,9 @@ if __name__ == '__main__':
         icon_image=None,
     )
 
-    st.image("https://lever-client-logos.s3.amazonaws.com/2bd4cdf9-37f2-497f-9096-c2793296a75f-1568844229943.png", caption="GetAround")
+    st.image("https://lever-client-logos.s3.amazonaws.com/2bd4cdf9-37f2-497f-9096-c2793296a75f-1568844229943.png",
+             caption = "GetAround",
+             width = 500)
 
     df = load_data()
 

@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  mlflow:
+    build:
+      context: ./mlflow
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./mlflow:/app
+
+  fastapi:
+    build:
+      context: ./fastapi
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./fastapi:/app
